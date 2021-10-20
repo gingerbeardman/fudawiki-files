@@ -1,0 +1,23 @@
+name: Check new commits upstream
+
+on:
+  push:
+  repository_dispatch:
+    types: [check_upstream]
+
+jobs:
+  check_upstream_commits:
+    runs-on: ubuntu-latest
+    name: Check upstream latest commits
+
+    steps:
+    - name: Checkout main
+      uses: actions/checkout@v2
+
+    - name: Fetch upstream changes
+      id: sync
+      uses: ivanmilov/upstream_check_new_commits@v1
+      with:
+        upstream_repository: Shotbow/fudawiki-files
+        upstream_branch: master
+        target_branch: master
