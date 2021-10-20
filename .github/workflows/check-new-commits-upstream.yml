@@ -2,6 +2,7 @@ name: Check new commits upstream
 
 on:
   push:
+  workflow_dispatch:
   repository_dispatch:
     types: [check_upstream]
 
