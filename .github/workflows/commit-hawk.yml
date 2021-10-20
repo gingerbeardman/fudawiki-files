@@ -1,12 +1,12 @@
 name: Notify on changes
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - '/hanafuda/video-games.md'
   repository_dispatch:
     types: [check_upstream]
+  push:
+    branches:
+      - master
+    paths:
+      - '/hanafuda/video-games.md'
 
 jobs:
   hawk:
