@@ -1,4 +1,4 @@
-name: hawk
+name: Notify on changes
 on:
   push:
     branches:
