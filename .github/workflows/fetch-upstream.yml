@@ -2,7 +2,7 @@ name: fetch upstream
 
 on: 
   schedule:
-    - cron: "10 13 * * *"
+    - cron: "11 13 * * *"
 jobs:
   build:
 
@@ -17,4 +17,4 @@ jobs:
         upstream_repo: https://github.com/Shotbow/fudawiki-files.git
         upstream_branch: master
         local_branch: master
-	github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
