@@ -8,6 +8,8 @@ on:
     paths:
       - '/hanafuda/video-games.md'
 
+on: workflow_dispatch
+
 jobs:
   hawk:
     name: hawk
