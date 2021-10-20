@@ -2,7 +2,7 @@ name: fetch upstream
 
 on: 
   schedule:
-    - cron: "11 13 * * *"
+    - cron: "0 * * * *"
 jobs:
   build:
 
