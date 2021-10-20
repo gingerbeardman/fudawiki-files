@@ -5,6 +5,8 @@ on:
       - main
     paths:
       - '/hanafuda/video-games.md'
+  repository_dispatch:
+    types: [check_upstream]
 
 jobs:
   hawk:
