@@ -1,5 +1,7 @@
 name: Notify on changes
 on:
+  schedule:
+    - cron: "1 * * * *"
   workflow_dispatch:
   repository_dispatch:
     types: [check_upstream]
