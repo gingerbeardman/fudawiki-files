@@ -1,5 +1,6 @@
 name: Notify on changes
 on:
+  workflow_dispatch:
   repository_dispatch:
     types: [check_upstream]
   push:
@@ -7,8 +8,6 @@ on:
       - master
     paths:
       - '/hanafuda/video-games.md'
-
-on: workflow_dispatch
 
 jobs:
   hawk:
